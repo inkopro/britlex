@@ -172,3 +172,41 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 40px;
 }
 
+/* about */
+.about {
+  padding-bottom: 227px;
+}
+.about__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section__title {
+  margin-bottom: 23px;
+}
+.about__descr {
+  color: var(--text);
+  font-size: 20px;
+  max-width: 635px;
+  margin-bottom: 50px;
+}
+.about__items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.about__item__title {
+  font-size: 48px;
+  color: var(--accent);
+  line-height: 80px;
+}
+.about__item__descr {
+  color: var(--text);
+  font-size: 20px;
+}
+.about__img {
+  display: block;
+  max-width: 100%;
+}
+
+
