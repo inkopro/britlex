@@ -261,6 +261,45 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--accent);
 }
 
+/* contact */
+.contact {
+  padding-bottom: 130px;
+}
+.contact__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: stretch;
+}
+
+.contact__title {
+  margin-bottom: 37px;
+}
+.contact__descr {
+  font-size: 20px;
+  color: var(--text);
+  width: 776px;
+  margin-bottom: 50px;
+}
+.contact__form {
+  display: flex;
+  gap: 12px;
+}
+.contact__input {
+  border-radius: 10px;
+  border: 1px solid var(--text);
+  width: 450px;
+  font-size: 16px;
+  color: var(--text);
+  padding:26px 0 26px 30px;
+}
+.contact__btn {
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 0 80px;
+}
+
+
 
 
 
