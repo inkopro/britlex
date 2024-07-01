@@ -12,6 +12,10 @@
 </head>
 
 <body>
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <!-- /overlay -->
+
   <!-- header -->
   <header class="header">
     <div class="container">
@@ -35,8 +39,40 @@
           <li class="header__mnu__item">
             <a href="#" class="header__mnu__link">Contacts</a>
           </li>
+          <a href="#" class="header__top__btn">Let’s Talk</a>
         </nav>
-        <a href="#" class="header__top__btn">Let’s Talk</a>
+        <button class="header__burger-btn">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- mobile menu -->
+        <nav class="header__mobile__mnu">
+          <div class="header__mobile__flex">
+            <a href="#" class="header__top__link">
+              <img src="img/header/logo.svg" alt="logo" class="header__top__img">
+            </a>
+            <button class="header__close-btn"><span></span>
+              <span></span>
+            </button>
+          </div>
+          <hr>
+          <li class="header__mnu__item">
+            <a href="#" class="header__mnu__link">Home</a>
+          </li>
+          <li class="header__mnu__item">
+            <a href="#" class="header__mnu__link">Skills</a>
+          </li>
+          <li class="header__mnu__item">
+            <a href="#" class="header__mnu__link">About Us</a>
+          </li>
+          <li class="header__mnu__item">
+            <a href="#" class="header__mnu__link">Pricing</a>
+          </li>
+          <li class="header__mnu__item">
+            <a href="#" class="header__mnu__link">Contacts</a>
+          </li>
+          <a href="#" class="header__top__btn">Let’s Talk</a>
+        </nav>
+        <!-- /mobile menu -->
       </div>
       <div class="header__bottom">
         <div class="header__bottom-left">
@@ -53,17 +89,18 @@
         </div>
         <div class="header__bottom-right">
           <img src="img/header/header__img.png" alt="girl" class="header__bottom__img">
-          <!-- <img src="img/responsive/992px/header/header_img-992.png" alt="girl" class="header__bottom__img-992px"> -->
         </div>
       </div>
     </div>
   </header>
+  <!-- /header -->
 
   <!-- skills -->
   <section class="skills">
     <div class="container">
       <h2 class="section__title skills__title">Skills</h2>
       <div class="skills__grid">
+
         <div class="skills__item speaking">
           <div class="skills__item__img">
             <img src="img/skills/1.png" alt="speaking">
@@ -79,6 +116,7 @@
             <button class="btn skills__item__btn">Learn more</button>
           </div>
         </div>
+
         <div class="skills__item writing">
           <div class="skills__item__img">
             <img src="img/skills/2.png" alt="writing">
@@ -90,6 +128,7 @@
             <button class="btn skills__item__btn">Learn more</button>
           </div>
         </div>
+
         <div class="skills__item reading">
           <div class="skills__item__img">
             <img src="img/skills/3.png" alt="reading">
@@ -101,6 +140,7 @@
             <button class="btn skills__item__btn">Learn more</button>
           </div>
         </div>
+
         <div class="skills__item listening">
           <div class="skills__item__img">
             <img src="img/skills/4.png" alt="listening">
@@ -112,25 +152,29 @@
             <button class="btn skills__item__btn">Learn more</button>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+  <!-- /skills -->
 
   <!-- about us -->
   <section class="about">
     <div class="container">
+      <h2 class="section__title about__title">About Us</h2>
       <div class="about__wrap">
         <div class="about__left">
-          <h2 class="section__title about__title">About Us</h2>
           <p class="about__descr">The model offers a framework for discussing problems related to the user's experience,
             as well as possible ways and means of solving them. Application development begins at the top level
             (strategy), where the future software product is described quite abstractly from the point of view of the
             expectations of both users and the customer.</p>
           <div class="about__items">
+
             <div class="about__item">
               <h3 class="about__item__title">800</h3>
               <p class="about__item__descr">Pupils</p>
             </div>
+
             <div class="about__item">
               <h3 class="about__item__title">18</h3>
               <p class="about__item__descr">Teachers</p>
@@ -139,6 +183,7 @@
               <h3 class="about__item__title">6</h3>
               <p class="about__item__descr">Foreign languages</p>
             </div>
+
           </div>
         </div>
         <div class="about__right">
@@ -147,6 +192,7 @@
       </div>
     </div>
   </section>
+  <!-- /about us -->
 
   <!-- pricing -->
   <section class="pricing">
@@ -190,16 +236,18 @@
       </div>
     </div>
   </section>
+  <!-- /pricing -->
 
   <!-- contact -->
   <section class="contact">
     <div class="container">
       <div class="contact__wrap">
         <div class="contact__left">
+          <h2 class="section__title contact__title contact__title_2">Contact Us</h2>
           <img src="img/contact/contact.png" alt="contact">
         </div>
         <div class="contact__right">
-          <h2 class="section__title contact__title">Contact Us</h2>
+          <h2 class="section__title contact__title contact__title_1">Contact Us</h2>
           <p class="contact__descr">Discover your current English level by taking our free online English test.Sign up
             to our newsletter for learning tips and free resources</p>
           <div class="contact__form">
@@ -208,9 +256,9 @@
           </div>
         </div>
       </div>
-      <!-- <div class="contact__line"></div> -->
     </div>
   </section>
+  <!-- /contact -->
 
   <!-- footer -->
   <footer class="footer">
@@ -234,6 +282,10 @@
       </div>
     </div>
   </footer>
+  <!-- /footer -->
+  <!--JS  -->
+  <script src="js/main.js"></script>
+  <!-- /JS -->
 </body>
 
 </html>
