@@ -2,7 +2,6 @@ const menu = document.querySelector('.header__mobile__mnu')
 const menuBtn = document.querySelector('.header__burger-btn')
 const menuOverlay = document.querySelector('.overlay')
 const menuClose = document.querySelector('.header__close-btn')
-const menuLink = document.querySelector('.header__mnu__item')
 const body = document.body;
 // кнопка бургера
 if (menu && menuBtn) {
@@ -20,13 +19,14 @@ if (menu && menuBtn) {
     menuOverlay.classList.remove('active')
     body.classList.remove('lock')
   })
-  menuLink.addEventListener('click', () => {
-    menu.classList.remove('active')
-    menuOverlay.classList.remove('active')
-    body.classList.remove('lock')
-  })
-
   // /кнопка закрытия мобильного меню
+  menu.querySelectorAll('.header__mnu__link').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active')
+      menuOverlay.classList.remove('active')
+      body.classList.remove('lock')
+    })
+  })
 }
 
 // плавный скролл
